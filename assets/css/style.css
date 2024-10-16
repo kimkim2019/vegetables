@@ -8,7 +8,7 @@
     --body-color: rgb(255, 255, 255);
     --color-white: rgb(255, 255, 255);
 
-    --text-color-first:#333333;
+    --text-color-first:#333;
     --text-color-second: #82bc18;
     --text-color-third: rgb(204, 254, 111);
 
@@ -51,6 +51,15 @@ html{
     background: #bbb;
 }
 
+.section-p1 {
+    padding: 40px 80px;
+  }
+  .wrapper{
+    padding-inline: 10vw;
+}
+.col{
+    
+}
 
 /* ---##-- REUSABLE CSS --##--- */
 /* ----- GLOBAL BUTTON DESIGN ----- */
@@ -62,13 +71,14 @@ html{
     border-radius: 10px;
     cursor: pointer;
     transition: .4s;
+    color: var(--color-white);
 }
 .btn>i{
     margin-left: 10px;
 }
 .btn:hover{
     background: var(--second-color);
-    color: var(--color-white);
+    color: var(--text-color-first);
 }
 
 /* ----- GLOBAL ICONS DESIGN ----- */
@@ -83,6 +93,7 @@ body{
 .container{
     width: 100%;
     position: relative;
+    
 }
 
 /* ----- NAVIGATION BAR ----- */
@@ -219,28 +230,855 @@ nav{
     border-radius: 50%;
 }
 
+/* ------SEARCH------- */
+.nav-search{
+    align-items: center;
+    margin-left: 10vw;
+    display: none;
+
+
+}
+#searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 25vw;
+  }
+  
+  #searchButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #searchButton i{
+    font-size: 1em;
+  }
+
 /* ----- WRAPPER DESIGN ----- */
 .wrapper{
     padding-inline: 10vw;
     
 }
 
+/* -----HOME Page */
+.main{
+    
+}
+#hero{
+    
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    
+}
+.featured-text-btn button{
+    background-image: url(/assets/img/shape2.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: var(--color-white);
+    border: 0 ;
+    padding: 14px 80px 14px 65px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: #1a1a1a;
+}
+.btn-more button a{
+   color: var(--color-white);
+}
+.btn-more button .btn:hover{
+    color: var(--text-color-first);
+ }
+
+
+
 /* --------FEATURE--------- */
 .featured{
     
-    padding: 5% 0;
+    padding: 10% 0;
 }
 .featured-box{
     background-image: url(/assets/img/banner7.png);
     background-repeat: no-repeat;
     background-position: top 25% right 0;
-    background-size: contain;
+    background-size: auto;
     height: 90vh;
-    width: 100%;
-    padding: 20px 80px;
+    padding: 10px 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
   
 }
+.featured-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 80vh;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 20px;
+    
+}
+.featured-text-info{
+    font-size: 17px;
+    margin-bottom: 30px;
+    color: var(--text-color-first);
+}
+.featured-name{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text-color-first);
+    margin-block: 20px;
+}
+.featured-text-btn{
+    display: flex;
+    gap: 20px;
+}
+.typedText{
+    text-transform: capitalize;
+    color: var(--text-color-second);
+    
+}
+
+
+@keyframes imgFloat {
+    50%{
+        transform: translateY(10px);
+        border-radius: 45% 55% 45% 55%;
+    }
+}
+/* ----ABOUT----- */
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    
+}
+.about img{
+    width: 50%;
+    height: auto;
+}
+.about div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 50px;
+
+}
+.about h2{
+}
+.about p{
+    text-align: justify;
+}
+.about button{
+    width: 50%;
+}
+/* -----CONTACT---- */
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#contact .details{
+    width: 40%;
+}
+#contact .details span {
+   font-size: 12px;
+}
+#contact .details h2,
+#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact .details h3{
+    font-size: 16px;
+    padding-bottom:15 ;
+}
+#contact .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contact .details li a{
+    text-decoration: none;
+    color: var(--text-color-first);
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+#contact .details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+/* FORM CONTACT */
+
+#form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: solid 1px #e1e1e1;
+}
+#form-details form button{
+    background-color: var(--first-color);
+}
+#form-details form button:hover{
+    background: var(--second-color);
+    color: var(--text-color-first);
+}
+#form-details .people div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+
+}
+#form-details .people div img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+#form-details .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+#form-details .people div p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color-first);
+}
+/* -----SIGN UP---- */
+#container-signup{
+  padding: 10% 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: var(--third-color);
+}
+.container-signup{
+    margin-top: 10%;
+    margin-bottom: 70px;
+    align-items: center;
+    background-color: #30be53;
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  .container-signup span {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+  }
+  .container-signup .form-signup {
+    margin-top: 30px;
+  }
+  .form-signup .input-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .input-box label {
+    color: #333;
+  }
+  .form-signup :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+  }
+  .input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  .form-signup .column {
+    display: flex;
+    column-gap: 15px;
+  }
+  .form-signup .gender-box {
+    margin-top: 20px;
+  }
+  .gender-box h3 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .form-signup :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .form-signup .gender {
+    column-gap: 5px;
+  }
+  .gender input {
+    accent-color: var(--first-color);
+  }
+  .form-signup :where(.gender input, .gender label) {
+    cursor: pointer;
+  }
+  .gender label {
+    color: #707070;
+  }
+  .address :where(input, .select-box) {
+    margin-top: 15px;
+  }
+  .select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+  }
+  .form-signup .submit-signup {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: var(--first-color);
+  }
+  .form-signup .submit-signup:hover {
+    background: var(--second-color);
+  }
+  /*Responsive*/
+  @media screen and (max-width: 500px) {
+    .form .column {
+      flex-wrap: wrap;
+    }
+    .form :where(.gender-option, .gender) {
+      row-gap: 15px;
+    }
+  }
+
+/* ----FOOTER---- */
+footer{
+    background-color: #333333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+footer .logo2{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom:20px ;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--color-white);
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+
+}
+footer .follow i{
+    color: var(--text-color-second);
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install .row img{
+    border: solid 1px var(--color-white);
+    border-radius: 5px;
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+    
+}
+footer .follow i:hover,
+footer a:hover{
+    color: var(--first-color);
+}
+footer .copyright{
+    color: var(--color-white);
+    width: 100%;
+    text-align: center;
+}
+
+/* PAYMENT */
+.container-pay{
+    padding: 10% 0;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    background: linear-gradient(90deg,var(--third-color) 60%, #30be53 40.1%);
+
+}
+.container-pay form{
+    margin-top: 20vh;
+    padding: 20px;
+    width: 700px;
+    background-color: var(--body-color);
+    box-shadow: 0 5px 10px var(--first-shadow-color);
+    border-radius: 8px;
+}
+.container-pay form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.container-pay form .row .col{
+    flex: 1 1 250px;
+}
+.container-pay form .row .col .titlebill{
+    font-size: 20px;
+    color: #333333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.container-pay form .row .col .inputBox{
+    margin: 15px 0;
+}
+.container-pay form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+}
+.container-pay form .row .col .inputBox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+.container-pay form .row .col .inputBox input:focus{
+    border:1px solid #000;
+  }
+  
+  .container-pay form .row .col .flex{
+    display: flex;
+    gap:15px;
+  }
+  
+  .container-pay form .row .col .flex .inputBox{
+    margin-top: 5px;
+  }
+  
+  .container-pay form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+  }
+  
+  .container-pay form .submit-pay{
+    border: none;
+    text-transform: capitalize;
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: var(--first-color);
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .container-pay form .submit-pay:hover{
+    background: var(--second-color);
+  }
+/* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
+@media only screen and (max-width: 1024px){
+  
+    .featured{
+        padding: 0;
+    }
+    .featured-text{
+        padding: 0;
+    }
+    .image, .image img{
+        width: 320px;
+        height: 320px;
+    }
+}
+
+/* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
+@media only screen and (max-width: 900px) {
+    .nav-button{
+        display: block;
+    }
+    .nav-menu.responsive{
+        left: 0;
+    }
+    .nav-logo{
+        display: inline;
+        justify-content: center center;
+    }
+    .nav-logo img{
+       
+    }
+    .nav-menu{
+        
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background:var(--body-color);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        min-height: 450px;
+        height: 90vh;
+        transition: .3s;
+    }
+    .nav-menu_list{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-menu_link{
+        display: none;
+    }
+    .nav-menu-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-search{
+        display: none;
+        align-items: center;
+        margin-left: 10vw;
+    
+    }
+    #searchInput {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 25vw;
+      }
+      
+      #searchButton {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #searchButton i{
+        font-size: 1em;
+      }
+    .featured{
+        height: 70vh;
+    }
+    .featured .featured-box{
+        background-size: 50%;
+        
+    }
+    .featured-box{
+        padding: 0;
+        margin: 0 auto;
+       
+    }
+    .featured-text{
+        width: 60%;
+        order: 2;
+        justify-content: center;
+        align-content: flex-start;
+        min-height: 60vh;
+        margin: 0 40px;
+    }
+    .social_icons{
+        margin-top: 2em;
+    }
+    .featured-image{
+        order: 1;
+        justify-content: center;
+        min-height: 150px;
+        width: 100%;
+        margin-top: 65px;
+    }
+    .featured-name{
+        
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--text-color-first);
+        margin-block: 20px;
+    }
+
+    .featured-text-info{
+        text-align: justify;
+    }
+    .image, .image img{
+        width: 150px;
+        height: 150px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .col{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-info, .contact-info{
+        width: 100vw;
+    }
+    .project-container{
+        justify-content: center;
+    }
+    .project-box{
+        width: 80%;
+    }
+
+    /* CONTACT */
+    #form-details{
+        padding: 40px;
+    }
+    #form-details form{
+        width: 50%;
+        
+    }
+    #contact .map{
+        margin-left: 20px;
+    }
+
+    /* ABOUT */
+    .about button{
+        width: 100%;
+    }
+    
+     /* ----PAYMENT----- */
+     .container-pay{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 0;
+        height: 100%;
+
+        
+     }
+     .container-pay form{
+        margin: 10% auto 0;
+        width: 90vw;
+     }
+     .container-pay form .row .col .inputBox{
+        margin: 5px 0;
+        width: 100%;
+    }
+     .container-pay form .row .col{
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+    .container-pay form .row .col .flex{
+        width: 100%;
+      }
+
+    /* SIGNUP */
+    .container-signup{
+        margin-top: 20vh;
+    }
+}
+
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    background-color: #;
+    color: var(--color-white);
+  }
+  
+
+  
+
+/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
+
+@media only screen and (max-width: 540px){
+    .featured{
+        width: 100vw;
+        height: 100%;
+     }
+    .featured .featured-box{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        
+    }
+    .featured-text{
+        
+    }
+    .featured-box{
+        background: none;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .featured-name{
+        
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--text-color-first);
+        margin-block: 20px;
+    }
+    .featured-text-btn{
+        width: 100vw;
+    }
+    .featured-box .featured-text {
+       width: 80vw;
+       
+        
+    }
+    .featured-text-info{
+        text-align: justify;
+    }
+    .featured-text-btn{
+        display: flex;
+        gap: 0px;
+    }
+    .project-box{
+        width: 100%;
+    }
+    .form-inputs{
+        flex-direction: column;
+    }
+    .input-field{
+        width: 100%;
+    }
+    /* CONTACT */
+    #contact{
+        flex-direction: column;
+        width: 100vw;
+        
+    }
+    #contact .details{
+        width: 100%;
+        margin-bottom: 30px;
+        
+    }
+    #contact .map iframe{
+        width: 80vw;
+          
+    }
+    /* FORM DETAILS */
+    #form-details{
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+    #form-details form{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* ABOUT */
+    .about{
+        display: flex;
+        flex-direction: column;
+
+       
+
+    }
+    .about img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .about div{
+        width: 100vw;
+        align-items: center;
+    }
+    .about button{
+        width: 100%;
+    }
+
+    /* PAYMENT */
+    .container-pay form{
+        margin: 20% auto 0;
+        
+     }
+}
+
+/* BACK TO TOP */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--first-color); /* Set a background color */
+    color: var(--color-white); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+ 
+  #myBtn:hover {
+    background-color:#30be53; /* Add a dark-grey background on hover */
+  }

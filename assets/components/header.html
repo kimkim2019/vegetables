@@ -3,14 +3,19 @@
     <nav id="header">
         <!--Nav LOGO  -->
         <div class="nav-logo">
-            <img src="assets/img/logo.png" alt="logo">
+            <a href="/index.html"><img src="/assets/img/logo.png" alt="logo"></a>
         </div>
+        <!-- nav search -->
+         <div class="nav-search">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+         </div>
         <!-- --nav menu -->
          <div class="nav-menu" id="navMenu">
 
             <ul class="nav-menu_list">
                 <li class="nav_list">
-                    <a href="#home" class="nav-link active-link">Home</a>
+                    <a href="/index.html" class="nav-link active-link">Home</a>
                     <div class="circle"></div>
                 </li>
                 <li class="nav_list">
@@ -22,14 +27,14 @@
                     <div class="circle"></div>
                 </li>
                 <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contacts</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                     <div class="circle"></div>
                 </li>
                
                  
             </ul>
             <ul class="nav-menu_link">
-                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="/assets/pages/register.html"><i class="fa-solid fa-user"></i></a></li>
 
                 <li>
                     <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -38,9 +43,11 @@
 
             </ul>
          </div>
-
+         
          <div class="nav-menu-btn">
             <i class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
     </nav>
  </header>
+
+ <script src="assets/js/script.js"></script>

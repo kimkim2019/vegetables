@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --------- ICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+   
+    
+    <title>Vegetable</title>
+</head>
+<body>
+    <div class="container">
+        <!-- ---------HEADER ----------- -->
+        <script>
+            fetch('/assets/components/header.html')
+             .then(response => response.text())
+             .then(data => {
+        const headerElement = document.createElement('div');
+        headerElement.innerHTML = data;
+        document.body.insertBefore(headerElement, document.body.firstChild);
+    });
+        </script>
+           
+          <div class="main">
+            
+              <!-- ----SIGNUP---- -->
+              <div id="container-signup"></div>
+              <script>
+                 fetch('/assets/components/signup.html')
+                   .then(response => response.text())
+                   .then(data => {
+                     document.getElementById('container-signup').innerHTML = data;
+                   });
+               </script>
+            </div>
+   
+         
+        <!-- ---------FOOTER-------- -->
+        <script>
+            fetch('/assets/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                const footerElement = document.createElement('footer');
+                footerElement.innerHTML = data;
+                document.body.appendChild(footerElement);
+            });
+        </script>
+    </div>
+
+
+
+
+
+
+
+
+    
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/script.js"></script>
+
+
+    <!-- ICON link -->
+    <script src="https://kit.fontawesome.com/238f581417.js" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
