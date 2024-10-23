@@ -29,7 +29,7 @@
         </script>
         <!-- ---------MAIN----------- -->
          <div class="main">
-            <!-- ---HERO-- -->
+           
              
             <!-- ----------FEATEURED BOX----- -->
             <div id="featured"></div>       
@@ -39,7 +39,9 @@
                   .then(data => {
                     document.getElementById('featured').innerHTML = data;
                   });
-              </script>                
+            </script>                
+            
+
             <!-- -----ABOUT US----- -->
             
             <div id="about">               
@@ -52,16 +54,100 @@
               });
           </script>
 
-          
-            <!-- ----SIGNUP---- -->
-             <!-- <div id="container-signup"></div>
-             <script>
-                fetch('/assets/components/signup.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('container-signup').innerHTML = data;
-                  });
-              </script> -->
+             <!-- BANNER PRODUCT -->
+          <section id="product" class="section-p1">
+            <div class="product__container">
+                <div class="product__item">
+                    <img src="./assets/img/Fresh_wasabi_rhizomes.jpg  " alt="">
+                    <div class="product__des">
+                        <span>Vegetables</span>
+                        <h5>Wasabi</h5>
+                        <p>
+                            Wasabi or Japanese horseradish is a plant of the 
+                            family Brassicaceae, which also includes 
+                            horseradish and mustard in other genera. 
+                        </p>
+                        <div class="product__des-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h4>$25</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="product__item">
+                    <img src="./assets/img/Fresh_wasabi_rhizomes.jpg  " alt="">
+                    <div class="product__des">
+                        <span>Vegetables</span>
+                        <h5>Wasabi</h5>
+                        <p>
+                            Wasabi or Japanese horseradish is a plant of the 
+                            family Brassicaceae, which also includes 
+                            horseradish and mustard in other genera. 
+                        </p>
+                        <div class="product__des-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h4>$25</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="product__item">
+                    <img src="./assets/img/Fresh_wasabi_rhizomes.jpg  " alt="">
+                    <div class="product__des">
+                        <span>Vegetables</span>
+                        <h5>Wasabi</h5>
+                        <p>
+                            Wasabi or Japanese horseradish is a plant of the 
+                            family Brassicaceae, which also includes 
+                            horseradish and mustard in other genera. 
+                        </p>
+                        <div class="product__des-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h4>$25</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="product__item">
+                    <img src="./assets/img/Fresh_wasabi_rhizomes.jpg  " alt="">
+                    <div class="product__des">
+                        <span>Vegetables</span>
+                        <h5>Wasabi</h5>
+                        <p>
+                            Wasabi or Japanese horseradish is a plant of the 
+                            family Brassicaceae, which also includes 
+                            horseradish and mustard in other genera. 
+                        </p>
+                        <div class="product__des-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h4>$25</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                
+    
+            </div>
+            
+
+         </section>
+            
             <!-- ------CONTACT---- -->
              <div id="contact" class="section-p1">
                <div class="details">
@@ -147,7 +233,14 @@
 
             </div>
           </div>
-         
+        
+
+
+        
+       
+   
+        
+
         <!-- ---------FOOTER-------- -->
         <script>
             fetch('/assets/components/footer.html')
